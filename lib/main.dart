@@ -13,7 +13,25 @@ class myApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text('Rebirth'),
+          leading: Builder(
+            builder: (BuildContext context) {
+              return IconButton(
+                icon: const Icon(
+                  Icons.menu,
+                  color: Colors.black87,
+                ),
+                onPressed: () {
+                  // Scaffold.of(context).openDrawer();
+                },
+                // tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              );
+            },
+          ),
+          title: const Text(
+            'Rebirth',
+            style: TextStyle(color: Colors.black87),
+          ),
+          backgroundColor: Colors.white,
         ),
       ),
     );
