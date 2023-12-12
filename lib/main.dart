@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             },
           ),
           title: const Text(
-            'Rebirth',
+            'reBirth',
             style: TextStyle(color: Colors.black87),
           ),
           backgroundColor: Colors.white,
@@ -76,12 +76,27 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 70,
                 ),
+                Text('행복을 나눌 수 있는'),
                 Text(
                   '입양은 어떠세요?',
                   style: TextStyle(fontSize: 18),
-                )
+                ),
+                SizedBox(
+                  height: 70,
+                ),
+                Row(
+                  children: [
+                    Text('전국 '),
+                    Text(' 종 '),
+                    Text(' 성별 검색기능'),
+                  ],
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                Text('최근 등록 동물 리스트업')
               ],
             ),
           ),
